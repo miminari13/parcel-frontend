@@ -1,16 +1,25 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css' // to use bootstrap.css
+import { Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/scss/app.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <div className="app__header">
-        Header
-      </div>
-      Body
-    </div>
-  );
-}
+import Main from './layout/Main';
+import Auth from './pages/Auth';
+import DashBoard from './pages/DashBoard';
+import DashBoardUser from './pages/DashBoardUser';
+
+export interface IApplicationProps {}
+
+const App: React.FunctionComponent<IApplicationProps> = () => {
+    return (
+        <Routes>
+            <Route path="/" element={ <Auth /> } />
+            <Route path="dashboard" element={ <Main /> }>
+                <Route index element={ <DashBoard /> } />
+                <Route path="user" element={ <DashBoardUser /> } />
+            </Route>
+        </Routes>
+    );
+};
 
 export default App;
