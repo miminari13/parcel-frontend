@@ -1,7 +1,7 @@
 import Logo from '../assets/img/logo.png'
 
 const Sidebar = () => (
-    <div className="col sidebar p-5">
+    <div className="col-md-3 sidebar p-5">
         <div className="sidebar__header">
             <div className="d-flex align-items-center">
                 <img src={Logo} className="sidebar-header__img me-3" alt="parcel" />
