@@ -1,0 +1,40 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  transition: ease 0.1s;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-color: $secondary;
+  color: $font-color;
+  font-family: "Nunito",sans-serif;
+  font-size: 16px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.fullheight {
+  height: 100vh;
+}

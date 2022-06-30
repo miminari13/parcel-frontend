@@ -1,19 +1,10 @@
-/* @import "helpers/fonts";
 @import "helpers/variables";
+@import "helpers/fonts";
 @import "helpers/general";
-
-@import "modules/page";
-@import "modules/btn";
-@import "modules/form";
-@import "modules/dividers";
-@import "modules/card";
-@import "modules/animations";
-@import "modules/dropdown";
-@import "modules/nav";
-@import "modules/scroll"; */
 
 @import "components/sidebar";
 @import "components/userbar";
 @import "components/contentbar";
 
-@import "modules/page";
+@import "components/card";
+@import "components/formElements";

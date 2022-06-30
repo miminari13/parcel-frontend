@@ -1,3 +1,10 @@
 .sidebar {
+    &__header {
+        height: 100px;
+    }
 
+    &-header__img {
+        width: 40px;
+        height: 40px;
+    }
 }

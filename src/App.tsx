@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/scss/app.scss';
 
 import Main from './layout/Main';
