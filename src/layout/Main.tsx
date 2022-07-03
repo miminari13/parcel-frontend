@@ -4,7 +4,7 @@ import Userbar from '../components/Userbar';
 
 const LayoutComponent = () => {
     return (
-        <div className="container-fluid fullheight">
+        <div className="container-fluid fullheight dashboard">
             <div className="row fullheight">
                 <Sidebar />
                 <div className="col-md-6 contentbar p-5">

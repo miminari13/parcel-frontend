@@ -1,10 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Auth = () => (
     <div className="container-fluid fullheight">
         <div className="row fullheight">
-            <div className="col-md-4 offset-md-4 m-auto">
+            <div className="col-md-4 offset-md-1 my-auto">
                 <form className="card card--shadow">
                     <h1 className="mb-4">Авторизация</h1>
                     <div className="mb-3">
